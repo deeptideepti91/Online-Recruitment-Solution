@@ -1,0 +1,34 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="main_div">
+  <div class="form">
+  <h1 class="heading">Login</h1>
+  <form id="loginForm">
+    <label for="username" class="txt">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password" class="txt">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit" class="button">Login</button>
+  </form>
+  <p class="txt1">Don't have an account? <a href="register.html" target="_blank">Register here</a></p>
+  <p class="txt1">Back To Login Page <a href="index.html" target="_blank">Home Page</a></p>
+  </div>
+</div>
+  <script src="script.js">
+    // JavaScript code for handling form submission
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      //Perform login authentication and redirect to the appropriate page
+    });
+  </script>
+</body>
+</html>

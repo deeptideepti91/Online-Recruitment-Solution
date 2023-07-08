@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Search</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    <div class="main_div">
+    <h1 class="heading">Candidate Search</h1>
+
+    <div class="search-container">
+        <label for="location" class="txt">Location:</label>
+        <input type="text" id="location" placeholder="Enter location">
+
+        <label for="job-role" class="txt">Job Role:</label>
+        <input type="text" id="job-role" placeholder="Enter job role">
+
+        <button onclick="searchCandidates()" class="button">Search</button>
+    </div>
+
+    <div id="candidates-list">
+        <h2 class="heading">Candidates</h2>
+        <ul id="candidates" class="txt"></ul>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

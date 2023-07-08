@@ -1,0 +1,34 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="main_div">
+  <div class="form">
+  <h1 class="heading">Register</h1>
+  <form id="registerForm">
+    <label for="username" class="txt">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password" class="txt">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit" class="button">Register</button>
+  </form>
+  <p class="txt1">Already have an account? <a href="login.html" target="_blank">Login here</a></p>
+  <p class="txt1">Back To Login Page <a href="index.html" target="_blank">Home Page</a></p>
+</div>
+</div>
+  <script src="script.js">
+    //JavaScript code for handling form submission
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      //Perform registration and redirect to the appropriate page
+    });
+  </script>
+</body>
+</html>
